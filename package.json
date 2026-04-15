@@ -4,6 +4,7 @@
   "version": "2.1.6",
   "scripts": {
     "prepare": "nitropack prepare",
+    "predeploy": "mkdir -p .output/public",
     "dev": "nitropack dev",
     "build": "nitropack build",
     "build:cloudflare": "NITRO_PRESET=cloudflare npm run build",
